@@ -1,2 +1,3 @@
-# leetcode
-Personal LeetCode Solutions
+# leetCode
+
+Personal [LeetCode](https://leetcode.com) solutions
