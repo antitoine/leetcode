@@ -22,7 +22,6 @@ func middleNode(head *ListNode) *ListNode {
 }
 
 func main() {
-	// [1,2,3,4,5]
 	input := &ListNode{Val: 1}
 	input.Next = &ListNode{Val: 2}
 	input.Next.Next = &ListNode{Val: 3}
@@ -30,7 +29,6 @@ func main() {
 	input.Next.Next.Next.Next = &ListNode{Val: 5}
 	result := middleNode(input)
 	fmt.Printf("Result: %#v\n", result)
-	// [3,4,5]
 	if result.Val == 3 && result.Next.Val == 4 && result.Next.Next.Val == 5 {
 		fmt.Println("Passed")
 	} else {

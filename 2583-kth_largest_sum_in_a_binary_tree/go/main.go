@@ -53,7 +53,6 @@ func kthLargestLevelSum(root *TreeNode, k int) int64 {
 }
 
 func main() {
-	// root = [5,8,9,2,1,3,7,4,6], k = 2
 	input1 := &TreeNode{Val: 5}
 	input1.Left = &TreeNode{Val: 8}
 	input1.Right = &TreeNode{Val: 9}

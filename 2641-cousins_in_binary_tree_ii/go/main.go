@@ -62,7 +62,6 @@ func replaceValueInTree(root *TreeNode) *TreeNode {
 }
 
 func main() {
-	// [5,4,9,1,10,null,7]
 	input := &TreeNode{Val: 5}
 	input.Left = &TreeNode{Val: 4}
 	input.Right = &TreeNode{Val: 9}
@@ -71,7 +70,6 @@ func main() {
 	input.Right.Right = &TreeNode{Val: 7}
 	result := replaceValueInTree(input)
 	fmt.Printf("Result: %#v\n", result)
-	// [0,0,0,7,7,null,11]
 	if result.Val == 0 && result.Left.Val == 0 && result.Right.Val == 0 && result.Left.Left.Val == 7 && result.Left.Right.Val == 7 && result.Right.Right.Val == 11 {
 		fmt.Println("Passed")
 	} else {
